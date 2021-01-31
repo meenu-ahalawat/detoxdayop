@@ -1,0 +1,104 @@
+{% import "bootstrap/wtf.html" as wtf %}
+<html>
+
+<head>
+    <title>Sign Up</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="overlay"> 
+    <form method="POST", action="">
+      {{ form.hidden_tag() }}
+       <!--   con = Container  for items in the form-->
+       <div class="con">
+       <!--     Start  header Content  -->
+       <header class="head-form">
+          <h2>Sign Up</h2>
+          <!--     A welcome message or an explanation of the login form -->
+          <p>Create your account</p>
+       </header>
+       <!--     End  header Content  -->
+       <div class="field-set" >
+         <table class="signtab">
+            <tr>
+          <!--   user name -->
+             <span class="input-item">
+               <i class="fa fa-user-circle"></i>
+             </span>
+            <!--   user name Input-->
+             <!-- <input class="form-input" id="txt-input" type="text" placeholder="Username" required> --> 
+             {{form.username(class="form-input", id="txt-input", type="text", placeholder="Username") }}
+          </tr>
+          <tr>
+          <span class="input-item">
+            <i class="fa fa-user-circle"></i>
+          </span>
+         <!--   user name Input-->
+          <!-- <input class="form-input" id="txt-input" type="email" placeholder="Email" required> -->
+          {{ form.email(class="form-input", id="txt-input", type="email", placeholder="Email") }}
+         </tr>
+         <tr>
+          <span class="input-item">
+            <i class="fa fa-user-circle"></i>
+          </span>
+         <!--   user name Input-->
+          <input class="form-input" id="txt-input" type="text" placeholder="First Name" required><span class="input-item">
+            <i class="fa fa-user-circle"></i>
+          </span>
+         <!--   user name Input-->
+          <input class="form-input" id="txt-input" type="text" placeholder="Last Name" required>
+
+         </tr>
+         <tr>
+          <span class="input-item">
+            <i class="fa fa-user-circle"></i>
+          </span>
+         <!--   user name Input-->
+          <input class="form-input" id="txt-input" type="text" placeholder="Age">
+               <!--   Password -->
+         </tr>
+         <tr>
+          <span class="input-item">
+            <i class="fa fa-key"></i>
+           </span>
+          <!--   Password Input-->
+          <!-- <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" required> -->
+          {{ form.password(class="form-input", type="password", placeholder="Password", id="pwd") }}
+         <!--   Password -->
+         <span class="input-item">
+            <i class="fa fa-key"></i>
+           </span>
+          <!--   Password Input-->
+          <input class="form-input" type="password" placeholder="Confirm Password" id="pwd"  name="password" required>
+         </tr>
+    <!--        buttons -->
+    <tr>
+          <button class="btn submits sign-up" > Sign Up </button>
+       </div>
+   </tr>
+   <br>
+    <!--   other buttons -->
+       <div class="other">
+   <tr>
+    <!--     Sign Up button -->
+    Already have an Account ?
+          <button class="login">Login 
+          <i class="fa fa-user-plus" aria-hidden="true"></i>
+          </button>
+    <!--      End Other the Division -->
+   </tr>
+       </div>
+         
+    <!--   End Container  -->
+      </div>
+   </table>
+      
+      <!-- End Form -->
+    </form>
+   
+    </div>
+
+
+</body>
+</html>
