@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Profile </title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: rgb(220, 147, 236);
+            }
+            
+            li {
+              float: left;
+            }
+            
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+            
+            li a:hover {
+              background-color: rgb(188, 217, 236);
+            }
+            </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+
+            <li><a href="forum.html">Forum</a></li>
+            
+
+            <li><a href="tasks.html">Your Tasks</a></li>
+            
+           
+            <li style="float:right"><a href="login.html">Login</a></li>
+            <li style="float:right"><a href="Profile.html">Profile</a></li> 
+        </ul>
+        <br>
+
+        <div class="overlay"> 
+            <form >
+               <div class="con">
+               <header class="head-form">
+                  <h2>Profile</h2>
+                  <img src="avatar.jpg" alt="avatar" style="width:150px;height:150px;">
+               </header>
+                
+                  <table class="signtab">
+                    <tr></tr><td><span class="input-item"><i class="fa fa-user-circle"></i></span><input class="form-input" id="txt-input" type="text" placeholder="UserName" required></td></tr>
+                    <tr><td><span class="input-item"><i class="fa fa-user-circle"></i></span><input class="form-input" id="txt-input" type="text" placeholder="Profession" required></td></tr>
+                    <tr><td><span class="input-item"><i class="fa fa-user-circle"></i></span><input class="form-input" id="txt-input" type="textbox" placeholder="About You" required></td></tr>
+                    <tr><td><span class="input-item"><i class="fa fa-user-circle"></i></span><input class="form-input" id="txt-input" type="textbox" placeholder="What do you want to quit ?" required></td></tr>
+                    <tr><td><span class="input-item"><i class="fa fa-user-circle"></i></span><input class="form-input" id="txt-input" type="textbox" placeholder="How did you get into it ?" required></td></tr>
+                    <tr><td><span class="input-item"><i class="fa fa-user-circle"></i></span><input class="form-input" id="txt-input" type="textbox" placeholder="How much time can you afford towards quitting ?" required></td></tr>
+                    <tr><td><span class="input-item"><i class="fa fa-user-circle"></i></span><input class="form-input" id="txt-input" type="textbox" placeholder="Anything else ?" required></td></tr>
+                    
+                    
+                  <tr><td><button class="btn submits sign-up" > Save </button></td></tr>
+                  </table>
+              </div>
+           
+              
+              <!-- End Form -->
+            </form>
+           
+            </div>
+    </body>
+    <footer>
+
+    </footer>
+</html>
