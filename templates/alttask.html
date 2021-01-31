@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>Tasks List</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color:  rgb(220, 147, 236);
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover {
+        background-color: rgb(188, 217, 236);
+      }
+
+      h3 {
+        background-image: linear-gradient(0deg, #E3FDF5 0%, #f3bce8 100%);
+        color: rgb(95, 96, 97);
+      }
+      
+      </style>
+</head>
+<body>
+   <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="forum.html">Forum</a></li>
+      <li><a href="tasks.html">Your Tasks</a></li>
+      <li style="float:right"><a href="login.html">Login</a></li>
+      <li style="float:right"><a href="Profile.html">Profile</a></li> 
+  </ul>
+
+  <div class="taskk">
+
+    <h1 style="color: rgb(101, 101, 219)";>These are the three activities for today</h1>
+    <br>
+    
+     <h3> Meditate for 15 minutes</h3>
+      <br><br>
+    <h3> Read a book for 30 minutes</h3>
+      <br><br>
+  <h3>Go for a walk </h3>
+     <br>
+      
+    </ul>
+  </div>
+
+
+</body>
+</html>
